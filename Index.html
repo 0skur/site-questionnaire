@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles.css">
+  <title>Questionnaire</title>
+</head>
+<body>
+  <form id="questionnaireForm">
+    <section class="question">
+      <label for="classe">Ta classe?</label>
+      <input type="radio" name="classe" value="4eme">4ème
+      <input type="radio" name="classe" value="3eme">3ème
+      <input type="radio" name="classe" value="2nd">2nd
+      <input type="radio" name="classe" value="1ere">1ère
+      <input type="radio" name="classe" value="terminal">Terminale
+      <input type="radio" name="classe" value="postbac">Post Bac
+      <input type="radio" name="classe" value="autre" id="autreClasseCheckbox">Autre
+      <input type="text" name="autreClasse" id="autreClasseText" placeholder="Précisez votre classe" style="display: none;">
+    </section>
+
+    <section class="question">
+      <label for="genre">Ton genre?</label>
+      <input type="radio" name="genre" value="garcon">Garçon
+      <input type="radio" name="genre" value="fille">Fille
+      <input type="radio" name="genre" value="agender">Agenre
+    </section>
+
+    <section class="question">
+      <label for="escapeGame">Comment as-tu trouvé l'Escape game?</label>
+      <input type="radio" name="escapeGame" value="1">1
+      <input type="radio" name="escapeGame" value="2">2
+      <input type="radio" name="escapeGame" value="3">3
+      <input type="radio" name="escapeGame" value="4">4
+      <input type="radio" name="escapeGame" value="5">5
+      <input type="radio" name="escapeGame" value="★">★
+    </section>
+
+    <section class="question">
+      <label for="decouverteMetiers">Cet escape game t'a-t-il permis de découvrir des métiers du numérique que tu ne connaissais pas?</label>
+      <input type="radio" name="decouverteMetiers" value="oui">Oui
+      <input type="radio" name="decouverteMetiers" value="non">Non
+    </section>
+
+    <section class="question">
+      <label for="envieDecouvrirMetiers">As-tu envie de découvrir plus de métiers du numérique?</label>
+      <input type="radio" name="envieDecouvrirMetiers" value="oui">Oui
+      <input type="radio" name="envieDecouvrirMetiers" value="non">Non
+      <input type="radio" name="envieDecouvrirMetiers" value="neSaisPas">Je ne sais pas
+    </section>
+
+    <section class="question">
+      <label for="choixVoie">Quelle voie vas-tu choisir?</label>
+      <input type="radio" name="choixVoie" value="professionnel">Professionnel
+      <input type="radio" name="choixVoie" value="technologique">Technologique
+      <input type="radio" name="choixVoie" value="general">Général
+      <input type="radio" name="choixVoie" value="neSaisPas">Je ne sais pas
+    </section>
+
+    <section class="question">
+      <label for="choixCIEL">En voie professionnelle, vas-tu choisir CIEL (Cybersécurité, Informatique et réseaux, Electronique)?</label>
+      <input type="radio" name="choixCIEL" value="oui">Oui
+      <input type="radio" name="choixCIEL" value="non">Non
+      <input type="radio" name="choixCIEL" value="pourquoiPas">Pourquoi pas
+    </section>
+
+    <section class="question">
+      <label for="choixSTI2D">En voie technologique, vas-tu choisir STI2D (SCIENCES ET TECHNOLOGIES DE L'INDUSTRIE ET DU DÉVELOPPEMENT DURABLE)?</label>
+      <input type="radio" name="choixSTI2D" value="oui">Oui
+      <input type="radio" name="choixSTI2D" value="non">Non
+      <input type="radio" name="choixSTI2D" value="pourquoiPas">Pourquoi pas
+    </section>
+
+    <section class="question">
+      <label for="choixSpecialite">En voie générale, vas-tu choisir la spécialité SI (Science Ingénieur) ou NSI (Numérique et Sciences Informatiques)?</label>
+      <input type="radio" name="choixSpecialite" value="SI">SI
+      <input type="radio" name="choixSpecialite" value="NSI">NSI
+      <input type="radio" name="choixSpecialite" value="neSaisPas">Je ne sais pas
+      <input type="radio" name="choixSpecialite" value="aucuneDesDeux">Aucune des deux
+    </section>
+
+    <section class="question">
+      <label for="remarks">Fille ou garçon, les métiers du numérique sont pour toi! As-tu des remarques ou des idées pour faire passer ce message?</label>
+      <textarea name="remarks" rows="4" cols="50"></textarea>
+    </section>
+    <section class="question">
+      <label for="remarks">Adresse mail<span style="color:rgb(200,20,0)">*</span></label>
+      <input name="remarks"></input>
+    </section>
+    <section class="submitContainer">
+      <button class="submitButton" type="button" onclick="submitForm()">Soumettre</button>
+    </section>
+  </form>
+  <script src="script.js"></script>
+</body>
+</html>
